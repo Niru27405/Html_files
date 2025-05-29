@@ -1,0 +1,30 @@
+h1{
+    background-color:aliceblue;
+    border-style: double;
+    border:20px;
+    margin:10px;
+    padding:20px;
+    
+}
+body{
+    border-color: 10px grid black;
+    padding: 20px;
+    margin:20px
+    
+}
+p{
+    padding: 20px;
+    border-style: groove;
+    border-color: black;
+}
+div{
+    padding: 20px;
+    border-style: groove;
+    border-color: black;
+}
+.pass{
+    text-align: center;
+}
+p.class{
+    font-style: oblique;
+}
