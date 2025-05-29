@@ -1,0 +1,46 @@
+div{
+    border-style: solid;
+    border-color: rgb(214, 176, 82);
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    
+
+}
+.p1{
+  
+   text-align: left;
+   image-orientation: from-image;
+}
+#p2{
+    text-align: center;
+}
+.para{
+    border-color: black;
+    
+}
+#p7{
+    text-align: center;
+    background-color: rgb(55, 113, 188);
+    color: white;
+}
+body{
+    justify-items: center;
+}
+#p8{
+    border-style: dashed;
+    border: 20px;
+    margin: 20px;
+    padding: 0px;
+    border-color: blue;
+    background-color: rgb(55, 113, 188);
+    color: white;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.niru{
+    background-color: rgb(214,176, 82);
+}
+#p{
+    color: rgb(55, 113, 188);
+}
