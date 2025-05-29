@@ -25,3 +25,6 @@ div{
 .pass{
     text-align: center;
 }
+p.class{
+    font-style: oblique;
+}
