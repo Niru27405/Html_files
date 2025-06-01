@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Niranjana's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background: linear-gradient(to right, #343a40, #6c757d);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .section-title {
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background-color: #dee2e6;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 40px;
+    }
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: calc(50% - 6px);
+      top: 0;
+      width: 12px;
+      height: 12px;
+      background-color: #007bff;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Niranjana</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="#competitions">Competitions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#workshops">Workshops</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1 class="display-4">👋🏻Hello, I'm Niranjana</h1>
+    <p class="lead">Electronics and Communication Engineer passionate in automation and embedded systems</p>
+  </div>
+</section>
+
+<!-- About -->
+<section class="container py-5" id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <img src="niru.jpg" class="rounded-circle img-fluid mb-3" alt="Niranjana" />
+    </div>
+    <div class="col-md-8">
+      <p>I'm currently pursuing my B.Tech in Electronics and Communication Engineering. I’m a tech enthusiast who loves integrating innovation with practicality. My interests lie in automation, IoT, and Embedded System. I’ve worked on various projects like automated public lighting and Wireless EV Charging</p>
+    </div>
+  </div>
+</section>
+
+<!-- Education Timeline -->
+<section class="container py-5" id="education">
+  <h2 class="section-title">🎓Education</h2>
+  <div class="position-relative timeline">
+    <div class="timeline-item row">
+      <div class="col-md-6 text-md-end">
+        <h5>2022 - Present</h5>
+        <p><strong>B.Tech in Electronics and Communication Engineering</strong><br>SRM Institute of Science and Technology, Trichy<br>CGPA: 8.58</p>
+      </div>
+      <div class="col-md-6"></div>
+    </div>
+    <div class="timeline-item row">
+      <div class="col-md-6"></div>
+      <div class="col-md-6">
+        <h5>2021 - 2022</h5>
+        <p><strong>Higher Secondary Education</strong><br>RSK Higher Secondary School<br>Percentage: 66.4%</p>
+      </div>
+    </div>
+    <div class="timeline-item row">
+      <div class="col-md-6 text-md-end">
+        <h5>2019 - 2020</h5>
+        <p><strong>SSLC</strong><br>RSK Higher Secondary School<br>Percentage: 70.2%</p>
+      </div>
+      <div class="col-md-6"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section class="container py-5" id="projects">
+  <h2 class="section-title">📂Projects</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Automated Public Lighting</h5>
+          <p class="card-text">Designed a smart street lighting system using LDR and IR sensors. Lights glow at 40% when dark and switch to full brightness upon detecting movement, enhancing energy efficiency and safety.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Wireless EV Charging</h5>
+          <p class="card-text">Developed a wireless electric vehicle charging system using inductive coupling. Integrated Hall effect sensors to detect misalignment and enhance charging efficiency. A microcontroller manages the system and displays charging status via an I2C LCD for real-time monitoring.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Solar Panel Tracking System</h5>
+          <p class="card-text">Developed a solar panel tracking system using light sensors and a PID controller to dynamically adjust panel orientation toward sunlight, maximizing energy efficiency compared to static systems.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="container py-5" id="skills">
+  <h2 class="section-title">🔧Skills</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <ul>
+        <li>Verilog</li>
+        <li>Arduino</li>
+        <li>MATLAB</li>
+        <li>Basic Python, SQL</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <ul>
+        
+        <li>IoT & Sensor Integration</li>
+        <li>HTML CSS</li>
+        <li>Team Leadership & Communication</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- Certifications -->
+<section class="container py-5" id="certifications">
+  <h2 class="section-title">📄Certifications</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="https://www.goodreturns.in/img/2023/04/meta-1681905184.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Introduction to Mobile Application Development by Meta</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://w10.naukri.com/mailers/2021/naukri-learning/oct/27oct-v3/NPTEL-Courses.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><a href=""></a> Embedded System With ARM (NPTEL-Elite)</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://cdn.arstechnica.net/wp-content/uploads/2019/05/getty-googleplex-office.jpg" class="card-img-top" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://www.linkedin.com/learning/certificates/168a9b8385c804ab4521e341b5a0ab95ba5e0c2a378230f9d6a5a0f83cfdc31d?trk=share_certificate">Google Cloud Certification</a></h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://myelearningworld.com/wp-content/uploads/2022/04/linkedin-learning-logo.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://www.linkedin.com/learning/certificates/f0780f1082f233091afa94100baca4c3128555364aa2595af871f0fccd313c70?trk=share_certificate">IoT Foundations and Fundamentals</a></h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <ul>
+    <li>Coursera – Introduction to Mobile Application Development</li>
+    <li>Coursera – Introduction to Linux (Offered by The Linux Foundation)</li>
+    <li>Coursera – SQL for Data Science</li>
+    <li>NPTEL – VLSI Design (Elite Certificate)</li>
+    </ul> -->
+</section>
+
+<!-- Competitions -->
+<section class="container py-5" id="competitions">
+  <h2 class="section-title">🎯Competitions</h2>
+  <ul>
+    <li>Smart India Hackathon (SIH) 2024 – Participated</li>
+    <li>Paper Presentation by Kongu Engineering college – Participated</li>
+    <li>Paper Presentation (Research Day at SRM)– Participated</li>
+    
+  </ul>
+</section>
+
+<!-- Workshops -->
+<section class="container py-5" id="workshops">
+  <h2 class="section-title">🛠️Workshops Attended</h2>
+  <ul>
+    <li>Workshop on VLSI Chip Design by Object Automation System Solutions Pvt. Ltd. in association with C-DAC Trivandrum</li>
+    <li>Prorover – Conducted by NIT Trichy</li>
+    
+  </ul>
+</section>
+
+<!-- Contact -->
+<section class="container py-5" id="contact">
+  <h2 class="section-title">☎️Contact Me</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <p><strong>📧Email:</strong> niranjanaravikumar2707@gmail.com</p>
+      <p><strong>📞Phone:</strong> +91 9894874751</p>
+      <p><strong>💻LinkedIn:</strong> <a href="https://www.linkedin.com/in/niranjana-ravikumar-074692230/" target="_blank">linkedin.com/in/yourprofile</a></p>
+    </div>
+    <div class="col-md-6">
+      <form>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  <p>&copy; 2025 Niranjana. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
